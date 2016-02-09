@@ -1,0 +1,4 @@
+List all of the countries with respective occurence totals in DESC order
+Country names should all appear lowercase
+
+select lower(country), count(*) from Address group by country desc;
