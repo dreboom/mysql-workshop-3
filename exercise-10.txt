@@ -1,0 +1,7 @@
+List all of the person names born between 8PM and 9PM but not in the month of February
+
+command:
+select firstName, lastName, right(birthday, length(birthday)-INSTR(birthday, ' ')) from Entry where right(birthday, length(birthday)-INSTR(birthday, ' ')) > '20:00:00' and right(birthday, length(birthday)-INSTR(birthday, ' ')) < '21:00:00' and birthday not like '%-02-%';
+
+result:
+249 rows.....and a big headache.
