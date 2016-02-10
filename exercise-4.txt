@@ -1,0 +1,8 @@
+List all of the first names for AddressBook.name="Pharetra Ut Limited"
+The first and last letters should be capitalized
+
+command:
+select concat(substring(firstName, 1, length(firstName)-1),upper(substring(firstName, -1))) as `concatenated` from Entry join AddressBook on (Entry.addressBookId=AddressBook.id) where AddressBook.name="Pharetra Ut Limited";
+
+result:
+65 rows with first and last letters of firstName capitalized
