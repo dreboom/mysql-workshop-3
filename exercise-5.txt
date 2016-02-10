@@ -1,0 +1,7 @@
+List all of the emails associated to AddressBook.id = 100
+
+command:
+select content from ElectronicMail join Entry on (ElectronicMail.entryId=Entry.id) join AddressBook on (Entry.addressBookId=AddressBook.id) where AddressBook.id="100";
+
+result:
+14 rows of emails
