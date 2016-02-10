@@ -1,0 +1,7 @@
+List all possible domain name values for ElectronicMail (email@domain.name)
+
+command:
+select right(content, length(content)-INSTR(content, '@')) from ElectronicMail group by content;
+
+result:
+2300 domain names
