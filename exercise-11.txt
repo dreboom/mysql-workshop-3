@@ -1,0 +1,7 @@
+List all of the cities within the countries of Canada, Austria, Isle of Man, Ireland and Japan
+
+command:
+select city, country from Address where country='Canada' or country='Austria' or country='Isle of Man' or country='Ireland' or country='Japan';
+
+result:
+58 rows of cities
